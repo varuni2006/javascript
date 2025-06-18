@@ -8,3 +8,12 @@ console.log("Hello")
 let name = "hitesh"
 let age = 18
 let isLoggedIn = false
+
+/* 
+null = standalone value
+string = ""
+
+*/
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
+
