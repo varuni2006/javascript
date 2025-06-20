@@ -1,0 +1,60 @@
+const score = 400
+console.log(score);
+//here by defualt javascript interpreted that it is of number type
+
+//we can also explicitly mention the datatype i.e Number
+
+const balance = new Number(100)
+console.log(balance);
+
+//way of output printed is different in bth the cases
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(2));
+//fixed function gives only the specified amount of numbers after the decimal
+
+
+const othernum = 123.8966
+
+//precision function will round off using only the soecififed number of digits
+console.log(othernum.toPrecision(4)); //123.9
+console.log(othernum.toPrecision(3)); //124
+
+//want to make representation of string easy
+const hundreads = 1000000
+console.log(hundreads.toLocaleString()); //1,000,000
+//according to US Standard
+
+//want it in indian standard
+console.log(hundreads.toLocaleString('en-'IN));
+
+
+//********************************* */
+//MATHS
+
+console.log(Math.abs(-4));
+console.log(Math.round(4.6)); //5
+console.log(Math.ceil(4,2));//5
+console.log(Math.floor(4,9));//4
+
+
+console.log(Math.random());
+//any value between 0 and 1 can be printed including 0 and 1
+
+//now if you want values from 1 to 10
+console.log((Math.random()* 10) +1);
+//we are doing  +1 to ensure that 0 never appears even after multiplying by 10
+ 
+console.log(Math.floor(Math.random()*10) +1);
+//so that values does not come in decimal form 
+
+
+
+
+
+
+
+
+
+
+
